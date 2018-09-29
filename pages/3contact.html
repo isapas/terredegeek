@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  
+
 </head>
 
 <body>
@@ -39,47 +39,34 @@
   </header>
     <!--important:main change in all pages-->
   <main>
-    <div class="firmVideo">
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IlRBl3YBzjk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div class="productContainer">
-      <article class="product">
-        <img src="#" alt="ordinateur">
-        <p class="name">pc portable</p>
-        <p class="p">prix</p>
-        <p class="stock">en stock</p>
-      </article>
-      <article class="product">
-        <img src="#" alt="ordinateur">
-        <p class="name">pc protable</p>
-        <p class="prix">prix</p>
-        <p class="stock">en stock</p>
-      </article>
-      <article class="product">
-        <img src="#" alt="téléphone">
-        <p class="name">téléphone portable</p>
-        <p class="prix">prix</p>
-        <p class="stock">en stock</p>
-      </article>
-      <article class="product">
-        <img src="#" alt="téléphone">
-        <p class="name">téléphone portable</p>
-        <p class="prix">prix</p>
-        <p class="stock">en stock</p>
-      </article>
-      <article class="product">
-        <img src="#" alt="cable d'alimentation">
-        <p class="name">cable d'alimentation pc</p>
-        <p class="prix">prix</p>
-        <p class="stock">En stock</p>
-      </article>
-      <article class="product">
-        <img src="#" alt="chargeur de téléphone">
-        <p class="name">Chargeur de téléphone</p>
-        <p class="prix">prix</p>
-        <p class="stock">En stock</p>
-      </article>
-    </div>
+
+      <h2>Nous contacter</h2>
+        <aside>
+          <h3>Notre siège</h3>
+          <p>42 Place Carnot<br>
+          27190 Conches-en-Ouche<br>
+          Tel: 02 32 26 93 67</p>
+        </aside>
+        <div class="formContainer">
+          <form id="form_contact" method="post" action="traitement.php">
+            <p>Vous souhaitez prendre contact avec TdG Informatique et Téléphonie.<br>
+              Saisissez votre message ici, il sera directement transmit à notre équipe.<br>
+              <form method="post" action="traitement.php">
+
+                <fieldset>
+                  <legend>Vos coordonnées</legend> <!-- Titre du fieldset -->
+                  <label for="nom" autofocus required>Votre nom?</label>
+                  <input type="text" name="nom" id="nom"/>
+                  <label for="prenom" required>Votre prénom?</label>
+                  <input type="text" name="prenom" id="prenom"/>
+                  <label for="email" required>Votre e-mail?</label>
+                  <input type="email" name="email" id="email"/>
+                </fieldset>
+                <fieldset>
+                  <label for="UserMessage"> Dites nous ce dont vous avez besoin.</label>
+                  <textarea class="UserMessage" id="UserContent" name="UserMessage" placeholder="Votre message" required="required"></textarea>
+                </fieldset>
+
   </main>
 
   <footer>
