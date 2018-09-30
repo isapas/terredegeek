@@ -10,86 +10,91 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
 </head>
 
 <body>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-
-  <!--header is in all pages-->
-  <!--start header with logo firm-->
   <header>
+    <!--title, logo, nav to other page of the site; panier preview. nedd to add icons maybe-->
     <h1>Terre de Geek</h1>
       <img src="img/logo.png" alt="logo" width="100" height="100">
     <h2>Informatique et téléphonie</h2>
     <nav>
       <a href="index.html">accueil</a>
-      <a href="AllProcucts.hlml">Nos produits</a>
+      <a href="allProcucts.hlml">Nos produits</a>
       <a href="2firminfo.html">Notre entreprise et nos points de vente</a>
       <a href="3contact.html">Nous contacter</a>
       <i class="fas fa-cart-arrow-down">Panier</i>
     <!-- end nav-->
     </nav>
   </header>
-    <!--important:main change in all pages-->
+  <!--important:main change in all pages-->
   <main>
-    <div class="firmVideo">
-      <iframe src="https://www.youtube-nocookie.com/embed/IlRBl3YBzjk?rel=0&amp;showinfo=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+    <!--start of the container sort forms -->
+      <!-- title sort by-->
+      <!-- form dropdown sort by category with list of categories-->
+      <!-- form with a strip to sort by price-->
+      <!-- form to sort by clients rating-->
+      <!-- form  to sort by disponibility an places-->
+    <!--end of the container sort forms -->
+    <!--product card with link to product page-->
     <div class="productContainer">
       <article class="product">
         <img src="img/acer_pred_.jpg" alt="Acer predator">
-        <h3 class="name">Acer predator</h3>
+        <h3 class="name">Acer predator PC gamer</p>
         <p class="p">2 599,20€</p>
         <p class="stock">en stock</p>
       </article>
       <article class="product">
         <img src="img/microsoft_surf_ble_i5_8g_256g_k1709014347935A_115201108.jpg" alt="Microsoft surface pro">
-        <h3 class="name">microsoft suface pro </h3>
+        <h3 class="name">microsoft suface pro </p>
         <p class="prix">1 304,99€</p>
         <p class="stock">en stock</p>
       </article>
       <article class="product">
         <img src="img/huawei-p20-pro-dual-sim-128-go-noir-1212959734_ML.jpg" alt="Huawei P20 Pro">
-        <h3 class="name">Huawei P20 Pro</h3>
+        <h3 class="name">Huawei P20 Pro</p>
         <p class="prix">637,93 €</p>
         <p class="stock">en stock</p>
       </article>
       <article class="product">
         <img src="img/phone-X-Plus.jpg" alt="téléphone">
-        <h3 class="name">Iphone X plus</h3>
+        <h3 class="name">Iphone X plus</p>
         <p class="prix">1 429 €</p>
         <p class="stock">en stock</p>
       </article>
       <article class="product">
         <img src="img/bloc-d-alimentation-d-origine-pour-pc-portable.jpg" alt="cable d'alimentation">
-        <h3 class="name">cable d'alimentation pc</h3>
+        <h3 class="name">cable d'alimentation pc</p>
         <p class="prix">19€99</p>
         <p class="stock">En stock</p>
       </article>
       <article class="product">
         <img src="img/universelle-station-de-charge-5-ports-usb-multifon.jpg" alt="station decharge de téléphone">
-        <h3 class="name">Station de charge pour téléphone</h3>
+        <h3 class="name">Station de charge pour téléphone</p>
         <p class="prix">39€99</p>
         <p class="stock">En stock</p>
       </article>
     </div>
   </main>
 
-  <footer>
-    <p>Société Terre de Geek<br>42 Place Carnot<br>27190 Conches-en-Ouche</p>
-    <p>Tel: 02 32 26 93 67</p>
-    <a href="mailto:TdG@example.com?subject=feedback">email me</a>
-    <!-- Copyright (c) 2018 Copyright Holder All Rights Reserved.-->
-    <p>Adiministrateur du site<br>Isabelle Passeniers<br>2018</p>
-    <a href="mailto:IP@example.com?subject=feedback">contact </a>
-  </footer>
+ <footer>
+   <address class="coordonnées">Société Terre de Geek
+     <br>42 Place Carnot,
+     <br>27190 Conches-en-Ouche
+     <br>Tel: 02 32 26 93 67
+     <a href="mailto:TdG@example.com?subject=feedback">contact</a>
+   </address>
+  <a href="mailto:TdG@example.com?subject=feedback">email me</a>
+  <p> Copyright (c) 2018 Copyright Isabelle Passeniers All Rights Reserved.</p>
+  <a href="mailto:IP@example.com?subject=feedback">contact Administrateur du site</a>
+</footer>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -106,4 +111,3 @@
 </body>
 
 </html>
-

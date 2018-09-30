@@ -30,7 +30,7 @@
     <h2>Informatique et téléphonie</h2>
     <nav>
       <a href="index.html">accueil</a>
-      <a href="AllProcucts.hlml">Nos produits</a>
+      <a href="allProcucts.hlml">Nos produits</a>
       <a href="2firminfo.html">Notre entreprise et nos points de vente</a>
       <a href="3contact.html">Nous contacter</a>
       <i class="fas fa-cart-arrow-down">Panier</i>
@@ -39,53 +39,56 @@
   </header>
     <!--important:main change in all pages-->
   <main>
-    <div class="firmVideo">
-      <iframe src="https://www.youtube-nocookie.com/embed/IlRBl3YBzjk?rel=0&amp;showinfo=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div class="productContainer">
-      <article class="product">
-        <img src="img/acer_pred_.jpg" alt="Acer predator">
-        <h3 class="name">Acer predator</h3>
-        <p class="p">2 599,20€</p>
-        <p class="stock">en stock</p>
-      </article>
-      <article class="product">
-        <img src="img/microsoft_surf_ble_i5_8g_256g_k1709014347935A_115201108.jpg" alt="Microsoft surface pro">
-        <h3 class="name">microsoft suface pro </h3>
-        <p class="prix">1 304,99€</p>
-        <p class="stock">en stock</p>
-      </article>
-      <article class="product">
-        <img src="img/huawei-p20-pro-dual-sim-128-go-noir-1212959734_ML.jpg" alt="Huawei P20 Pro">
-        <h3 class="name">Huawei P20 Pro</h3>
-        <p class="prix">637,93 €</p>
-        <p class="stock">en stock</p>
-      </article>
-      <article class="product">
-        <img src="img/phone-X-Plus.jpg" alt="téléphone">
-        <h3 class="name">Iphone X plus</h3>
-        <p class="prix">1 429 €</p>
-        <p class="stock">en stock</p>
-      </article>
-      <article class="product">
-        <img src="img/bloc-d-alimentation-d-origine-pour-pc-portable.jpg" alt="cable d'alimentation">
-        <h3 class="name">cable d'alimentation pc</h3>
-        <p class="prix">19€99</p>
-        <p class="stock">En stock</p>
-      </article>
-      <article class="product">
-        <img src="img/universelle-station-de-charge-5-ports-usb-multifon.jpg" alt="station decharge de téléphone">
-        <h3 class="name">Station de charge pour téléphone</h3>
-        <p class="prix">39€99</p>
-        <p class="stock">En stock</p>
-      </article>
-    </div>
+
+      <h2>Nous contacter</h2>
+        <aside>
+          <h3>Notre siège</h3>
+          <address class="coordonnées">Société Terre de Geek
+            <br>42 Place Carnot,
+            <br>27190 Conches-en-Ouche
+            <br>Tel: 02 32 26 93 67
+            <a href="mailto:TdG@example.com?subject=feedback">contact</a>
+          </address>
+        </aside>
+        <div class="formContainer">
+          <form id="form_contact" method="post" action="traitement.php">
+            <p>Vous souhaitez prendre contact avec TdG Informatique et Téléphonie.<br>
+              Saisissez votre message ici, il sera directement transmi à notre équipe.<br>
+                <fieldset>
+                  <legend>Vos coordonnées</legend> <!-- Titre du fieldset -->
+                  <label for="nom" autofocus required>Votre nom?</label>
+                  <input type="text" name="nom" id="nom"/>
+                  <label for="prenom" required>Votre prénom?</label>
+                  <input type="text" name="prenom" id="prenom"/>
+                  <label for="email" required>Votre e-mail?</label>
+                  <input type="email" name="email" id="email"/>
+                  <br><br>
+                    <select id="objectmessage">
+                     <option value="valeur0" autofocus>Objet du message</option>
+                     <option value="valeur1">Des informations</option>
+                     <option value="valeur2">Une réclamation</option>
+                     <option value="valeur3">Contacter le SAV</option>
+                     <option value="valeur4">Contacter un de nos magasins</option>
+                   </select>
+                  <br><br>
+                  <label for="UserMessage"> Dites nous ce dont vous avez besoin.</label>
+                  <textarea class="UserMessage" id="UserContent" name="UserMessage" placeholder="Votre message" required="required"></textarea>
+                  <br><br>
+                  <input type="submit" value="Envoyer"/>
+                  <input type="reset" value="Annuler"/>
+                </fieldset>
+          </form>
+
+
   </main>
 
   <footer>
-    <p>Société Terre de Geek<br>42 Place Carnot<br>27190 Conches-en-Ouche</p>
-    <p>Tel: 02 32 26 93 67</p>
-    <a href="mailto:TdG@example.com?subject=feedback">email me</a>
+    <address class="coordonnées">Société Terre de Geek
+      <br>42 Place Carnot,
+      <br>27190 Conches-en-Ouche
+      <br>Tel: 02 32 26 93 67
+      <a href="mailto:TdG@example.com?subject=feedback">contact</a>
+    </address>    <a href="mailto:TdG@example.com?subject=feedback">email me</a>
     <!-- Copyright (c) 2018 Copyright Holder All Rights Reserved.-->
     <p>Adiministrateur du site<br>Isabelle Passeniers<br>2018</p>
     <a href="mailto:IP@example.com?subject=feedback">contact </a>
@@ -106,4 +109,3 @@
 </body>
 
 </html>
-
