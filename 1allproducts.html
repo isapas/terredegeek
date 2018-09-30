@@ -11,37 +11,41 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-ico" href="icon.png">
   <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
 </head>
 
 <body>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-
-  <!--header is in all pages-->
-  <!--start header with logo firm-->
   <header>
     <h1>Terre de Geek</h1>
       <img src="img/logo.png" alt="logo" width="100" height="100">
     <h2>Informatique et téléphonie</h2>
     <nav>
-      <a href="#">Nos produits</a>
-      <a href="#">Notre entreprise et nos points de vente</a>
-      <a href="#">Nous contacter</a>
+      <a href="index.html">accueil</a>
+      <a href="allProcucts.hlml">Nos produits</a>
+      <a href="2firminfo.html">Notre entreprise et nos points de vente</a>
+      <a href="3contact.html">Nous contacter</a>
       <i class="fas fa-cart-arrow-down">Panier</i>
     <!-- end nav-->
     </nav>
   </header>
-    <!--important:main change in all pages-->
+
+  <!--important:main change in all pages-->
   <main>
-    <div class="firmVideo">
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IlRBl3YBzjk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+    <!--start of the container sort forms -->
+      <!-- title sort by-->
+      <!-- form dropdown sort by category with list of categories-->
+      <!-- form with a strip to sort by price-->
+      <!-- form to sort by clients rating-->
+      <!-- form  to sort by disponibility an places-->
+    <!--end of the container sort forms -->
+    <!--product card with link to product page-->
     <div class="productContainer">
       <article class="product">
         <img src="#" alt="ordinateur">
@@ -79,17 +83,17 @@
         <p class="prix">prix</p>
         <p class="stock">En stock</p>
       </article>
-    </div>
+
   </main>
 
-  <footer>
-    <p>Société Terre de Geek<br>42 Place Carnot<br>27190 Conches-en-Ouche</p>
-    <p>Tel: 02 32 26 93 67</p>
-    <a href="mailto:TdG@example.com?subject=feedback">email me</a>
-    <!-- Copyright (c) 2018 Copyright Holder All Rights Reserved.-->
-    <p>Adiministrateur du site<br>Isabelle Passeniers<br>2018</p>
-    <a href="mailto:IP@example.com?subject=feedback">contact </a>
-  </footer>
+ <footer>
+  <p>Société Terre de Geek<br>42 Place Carnot<br>27190 Conches-en-Ouche</p>
+  <p>Tel: 02 32 26 93 67</p>
+  <a href="mailto:TdG@example.com?subject=feedback">email me</a>
+  <!-- Copyright (c) 2018 Copyright Holder All Rights Reserved.-->
+  <p>Adiministrateur du site<br>Isabelle Passeniers<br>2018</p>
+  <a href="mailto:IP@example.com?subject=feedback">contact </a>
+</footer>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
