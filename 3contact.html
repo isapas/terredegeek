@@ -54,9 +54,7 @@
         <div class="formContainer">
           <form id="form_contact" method="post" action="traitement.php">
             <p>Vous souhaitez prendre contact avec TdG Informatique et Téléphonie.<br>
-              Saisissez votre message ici, il sera directement transmit à notre équipe.<br>
-              <form method="post" action="traitement.php">
-
+              Saisissez votre message ici, il sera directement transmi à notre équipe.<br>
                 <fieldset>
                   <legend>Vos coordonnées</legend> <!-- Titre du fieldset -->
                   <label for="nom" autofocus required>Votre nom?</label>
@@ -66,12 +64,21 @@
                   <label for="email" required>Votre e-mail?</label>
                   <input type="email" name="email" id="email"/>
                   <br><br>
+                    <select id="objectmessage">
+                     <option value="valeur0" autofocus>Objet du message</option>  
+                     <option value="valeur1">Des informations</option>
+                     <option value="valeur2">Une réclamation</option>
+                     <option value="valeur3">Contacter le SAV</option>
+                     <option value="valeur4">Contacter un de nos magasins</option>
+                   </select>
+                  <br><br>
                   <label for="UserMessage"> Dites nous ce dont vous avez besoin.</label>
                   <textarea class="UserMessage" id="UserContent" name="UserMessage" placeholder="Votre message" required="required"></textarea>
                   <br><br>
                   <input type="submit" value="Envoyer"/>
                   <input type="reset" value="Annuler"/>
                 </fieldset>
+          </form>
 
 
   </main>
